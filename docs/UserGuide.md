@@ -13,6 +13,7 @@ SWEe! is a  **desktop app for CS2103T students to manage their learning progress
         - Deleting a flashcard: `delete`
         - Listing all flashcards: `list`
         - Review all flashcards : `review`
+        - Sort all flashcards: `sort`
         - Favourite a flashcard : `fav`
         - Unfavourite a flashcard: `unfav`
         - Exiting the program: `exit`
@@ -41,6 +42,8 @@ SWEe! is a  **desktop app for CS2103T students to manage their learning progress
    * **`list`** : Lists all flashcards.
 
    * **`review`** : Reviews a list of all flashcards.
+   
+   * **`sort leastReviewed`** : Sorts the list of flashcards according to review rate in ascending order.
    
    * **`fav 1`** : Favourite the 1st flashcard in the current list.
       
@@ -130,6 +133,18 @@ Examples:
     - `[left key]` returns the previous flashcard
     - `q` quits review function
     
+### Sort all flashcards : `sort`
+
+Sorts a list of all flashcards according to the criteria given.
+
+Format: `sort CRITERIA`
+
+Examples: 
+* sort followed by:
+    - `leastReviewed` shows a list of all flashcards sorted according to review rate in ascending order
+    - `mostReviewed` shows a list of all flashcards sorted according to review rate in descending order
+    - `successRate` shows a list of all flashcards sorted according to success rate in acending order
+    
 ### Favourite a flashcard  : `fav`
 
 Favourites the specified flashcard.
@@ -170,6 +185,7 @@ Action | Format, Examples
 **Delete** | `delete INDEX` <br> e.g., `delete 3`
 **List** | `list`
 **Review** | `review`
+**SORT** | `sort CRITERIA`
 **Fav** | `fav INDEX` <br> e.g., `fav 1`
 **Unfav** | `unfav INDEX` <br> e.g., `unfav 1`
 **Exit** | `exit`
